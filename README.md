@@ -13,17 +13,27 @@ Repository for the automated testing project of the Zombie Plus system.
 
 ## 🤖 How to run
 
-1. Clone the repository and install dependencies
+1. Clone the repository and install dependencies for application on folder **application/web** and **application/api**
 ```
 npm install
 ```
 
-2. Run tests in Headless mode
+2. Start the application locally. It is necessary to run this for Backend and Frontend Layer
+```
+npm run dev
+```
+
+3. Install dependencies for cypress project
+```
+npm install
+```
+
+4. Run tests in Headless mode
 ```
 npx cypress run 
 ```
 
-## Project architecture
+## 🤖 Project architecture
 
 This project uses the AppActions design pattern, which involves creating classes based on your application's features. Each class is responsible for all methods related to its feature. 
 
