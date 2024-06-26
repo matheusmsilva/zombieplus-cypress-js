@@ -19,9 +19,7 @@ module.exports = defineConfig({
 
         executeSQL(sqlScript) {
           return new Promise((resolve, reject) => {
-
             const pool = new Pool(DbConfig)
-            
             pool.query(sqlScript, (error, result) => {
               if (error) {
                 reject(error)
@@ -30,8 +28,6 @@ module.exports = defineConfig({
               resolve(result)
               pool.end()
             })
-            
-
           })
         }
 
